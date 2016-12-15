@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="163px">
+
+        <ImageView
+            android:id="@+id/iv_update_app"
+            android:layout_width="116px"
+            android:layout_height="116px"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="28px"
+            android:src="@drawable/app_ximalaya">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_update_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_update_app"
+            android:layout_marginLeft="19px"
+            android:layout_alignTop="@+id/iv_update_app"
+            android:text="喜马拉雅FM"
+            android:textColor="@color/titleColor"
+            android:textSize="38px"/>
+
+        <TextView
+            android:id="@+id/tv_update_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_update_app"
+            android:layout_marginLeft="19px"
+            android:layout_alignBottom="@+id/iv_update_app"
+            android:text="当前版本:1.1.1"
+            android:textColor="@color/subtitlesColor"
+            android:textSize="24px"/>
+
+        <TextView
+            android:id="@+id/tv_update_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="->最新版本:2.0.0, 大小6.6M"
+            android:textColor="@color/appSizeColor"
+            android:textSize="24px"
+            android:layout_toRightOf="@+id/tv_update_version"
+            android:layout_alignTop="@+id/tv_update_version"
+            android:visibility="invisible"
+            >
+        </TextView>
+
+
+        <Button
+            android:id="@+id/bt_update"
+            android:layout_width="200px"
+            android:layout_height="54px"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="60px"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/an_zhuang_kuang"
+            android:text="更新"
+            android:textSize="32px"
+            android:textColor="#ffffff"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_update"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/update_progress"
+            android:layout_alignStart="@+id/update_progress"
+            android:layout_alignEnd="@+id/update_progress"
+            android:visibility="invisible"
+            >
+
+            <TextView
+                android:id="@+id/tv_update_currentsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0M/0M"/>
+
+            <TextView
+                android:id="@+id/tv_update_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0KB/S"/>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/update_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="800dp"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:layout_toRightOf="@+id/iv_update_app"
+            android:layout_marginLeft="19px"
+            android:layout_alignBottom="@+id/iv_update_app"
+            android:indeterminate="false"
+            android:layout_toLeftOf="@+id/bt_update"
+            android:layout_marginRight="19dp"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

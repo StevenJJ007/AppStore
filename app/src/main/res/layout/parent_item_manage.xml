@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_parent"
+        android:layout_width="match_parent"
+        android:layout_height="162px"
+        android:background="@color/listvewBg_select"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="30px"
+            android:text="更新管理"
+            android:textColor="@color/titleColor"
+            android:textSize="38px"
+            />
+        
+        <TextView
+            android:id="@+id/bt_update_number"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:background="@drawable/circle"
+            android:text="2"
+            android:gravity="center"
+            android:textSize="20px"
+            android:textColor="@color/updateNumber"
+            android:layout_alignBaseline="@+id/tv_title"
+            android:layout_toRightOf="@+id/tv_title"
+            android:layout_marginLeft="15px"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/tv_subtitles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:text="抢先体验新颁布"
+            android:textColor="@color/subtitlesColor"
+            android:textSize="28px"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="22px"
+            />
+
+        <ImageButton
+            android:id="@+id/ib_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:layout_marginRight="60px"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/down_target"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

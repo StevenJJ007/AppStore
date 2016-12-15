@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/app_liebiao"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:id="@+id/appitem_icon"
+            android:layout_width="116px"
+            android:layout_height="116px"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp">
+
+        </ImageView>
+
+
+        <Button
+            android:id="@+id/appitem_action1"
+            android:layout_width="200px"
+            android:layout_height="54px"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/linearLayout"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/an_zhuang_kuang"
+            android:text="安装"
+            android:textColor="#ffffff"
+            android:textSize="32px" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/appitem_action1"
+            android:layout_toRightOf="@id/appitem_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/appitem_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#646464"
+                android:textSize="38px">
+
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/appitem_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="10dp"
+                    android:text=""
+                    android:textColor="#909090"
+                    android:textSize="28px">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/appitem_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="80dp"
+                    android:paddingTop="10dp"
+                    android:text=""
+                    android:textColor="#909090"
+                    android:textSize="28px">
+
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/downlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    android:visibility="invisible">
+
+                    <RelativeLayout
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/app_currentsize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0M/0M"/>
+
+                        <TextView
+                            android:id="@+id/app_currentspeed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="0KB/S"/>
+                    </RelativeLayout>
+
+                    <ProgressBar
+                        android:id="@+id/currentprogress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:max="100"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

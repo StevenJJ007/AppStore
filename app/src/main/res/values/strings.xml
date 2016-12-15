@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">应用商店</string>
+    <string name="app">应用</string>
+    <string name="manage">管理</string>
+</resources>

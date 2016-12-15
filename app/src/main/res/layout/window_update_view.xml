@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="400dp"
+    android:layout_height="160dp"
+    android:background="@drawable/update_view_bg"
+    android:orientation="vertical"
+    tools:context="com.anyonavinfo.cpadstore.MainActivity" >
+
+    <TextView
+        android:id="@+id/update_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="应用商店有新版本，是否立即更新？"
+        android:textColor="#323232"
+        android:textSize="20sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="178px" >
+
+        <LinearLayout
+            android:id="@+id/update_view_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="28px"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1.5px"
+                android:layout_margin="0px"
+                android:padding="0px"
+                android:src="@drawable/update_view_line1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/update_view_btn_confirm"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:text="是"
+                    android:textColor="#3b78dc"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/update_view_line2" />
+
+                <Button
+                    android:id="@+id/update_view_btn_cancel"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:text="否"
+                    android:textColor="#3b78dc"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/update_view_download"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <com.anyonavinfo.cpadstore.update.NumberProgressBar
+                android:id="@+id/numberbar"
+                style="@style/NumberProgressBar_Relax_Blue"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                custom:progress_current="0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/update_view_btn_hide"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:text="隐藏"
+                    android:textColor="#3b78dc"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:layout_width="2px"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/update_view_line2" />
+
+                <Button
+                    android:id="@+id/update_view_btn_canceldownload"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:text="取消"
+                    android:textColor="#3b78dc"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

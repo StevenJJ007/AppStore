@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorGrey">#D4D4D4</color>
+    <color name="contentBg">#f4f4f4</color>
+
+    <color name="listvewBg">#eaeaea</color>
+    <color name="listvewBg_select">#ffffff</color>
+
+    <color name="updateNumber">#f75555</color>
+    <color name="titleColor">#646464</color>
+    <color name="subtitlesColor">#909090</color>
+    <color name="appSizeColor">#42a9e6</color>
+</resources>
